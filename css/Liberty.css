@@ -1,0 +1,27 @@
+/* importation des feuilles de style de chaque partie */
+
+@import url("BandeRouge.css");
+@import url("Home.css");
+@import url("OurWorks.css");
+@import url("Pricing.css");
+@import url("Contact.css");
+@import url("Footer.css");
+
+
+
+html, body, ul, li , h1, h2{ 
+    margin: 0;
+    padding: 0;
+} 
+
+.texte{
+    position: relative;
+    width: 40%;
+    height: 100px;
+    left: 30%;
+    top: 40px;
+    font-size: 20px;
+    font-family: "Yantramanav", sans-serif;
+    color: #858181;
+}
+

@@ -1,0 +1,298 @@
+
+<!-- Fait par Guerber Sarah le 09 décembre 2019 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!----- lien vers le fichier css "global" ----->
+    <link rel="stylesheet" href="./css/Liberty.css">
+    <!----- liens vers les polices d'écriture utilisées ----->
+    <link href="https://fonts.googleapis.com/css?family=Biryani|Poiret+One|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!----------------------------------- #BandeRouge: bande rouge en haut de page fixée ----------------------------------->
+
+    <div id="BandeRouge">
+        <div id="liberty">
+            LIBERTY
+        </div>
+        <div id="menu">
+            <div><a href="#Home">HOME</a></div>
+            <div><a href="#OurWorks">OUR WORKS</a></div>
+            <div><a href="#Pricing">PRICING</a></div>
+            <div><a href="#Contact">CONTACT</a></div>
+        </div>
+    </div>
+	
+	<!--------------------------------------------- #Home: Partie "HOME" --------------------------------------------->
+	
+    <div id="Home">
+        
+        <img src="img/logo.png" id="logo">
+        <div id="slogan">
+           
+                <p>HELLO WE ARE LIBERTY</p>
+                <p>WE DO AMAZING THINGS EVERYDAY</p>
+        </div>
+        <!----- bouton vers la partie "CONTACT" ----->
+        <button id="ContactUs" type="button">
+            <a href="#Contact">CONTACT US</a>
+        </button>
+    </div>
+
+    <!--------------------------------------------- #OurWorks: Partie "OUR WORKS" --------------------------------------------->
+
+    <div id="OurWorks">
+        OUR WORKS
+        <div class="texte">Sed aliquam vitae lacus quis interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia aenean.</div>
+        <!----- Mosaique des images ----->
+        <div id="images">
+            <!--Première ligne de la mosaique 
+                (chaque div représente une colonne de la ligne) -->
+            <div id="ligne1">
+              <div id="img0">
+                  <img src="img/img-0.jpg">
+                  <div id="filtre0"></div>
+                  <label>Project Title</label>
+                  <div id="Rond"></div>
+              </div>
+              <div id="img1">
+                  <img src="img/img-1.jpg">
+                  <div id="filtre1"></div>
+                  <label>Project Title</label>
+                  <div id="Rond"></div>
+              </div>
+              <div id="img2">
+                  <img src="img/img-2.jpg">
+                  <div id="filtre2"></div>
+                  <label>Project Title</label>
+                  <div id="Rond"></div>
+              </div>
+              <div id="img3">
+                  <img src="img/img-3.jpg">
+                  <div id="filtre3"></div>
+                  <label>Project Title</label>
+                  <div id="Rond"></div>
+              </div>
+            </div>
+            <!-- Deuxième ligne de la mosaique 
+                (chaque div représente une colonne de la ligne) -->
+            <div id="ligne2">
+                <div id="img4">
+                    <img src="img/img-4.jpg">
+                    <!-- les trois lignes suivantes définissent le filtre qui s'affiche sur l'image 
+                        quand on passe la souris dessus (voir CSS)-->
+                    <div id="filtre4"></div>
+                    <label>Project Title</label>
+                    <div id="Rond"></div>
+                </div>
+                <div id="img5">
+                    <img src="img/img-5.jpg">
+                    <div id="filtre5"></div>
+                    <label>Project Title</label>
+                    <div id="Rond"></div>
+                </div>
+                <div id="img6">
+                    <img src="img/img-6.jpg">
+                    <div id="filtre6"></div>
+                    <label>Project Title</label>
+                    <div id="Rond"></div>
+                </div>
+                <div id="img7">
+                    <img src="img/img-7.jpg">
+                    <div id="filtre7"></div>
+                    <label>Project Title</label>
+                    <div id="Rond"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------- #Pricing: Partie "PRICING" --------------------------------------------->
+
+    <div id="Pricing">
+       PRICING TABLE
+        <div class="texte">Sed aliquam vitae lacus quis interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia aenean.</div>
+        <!-- #priceContainer est un flex horizontal pour afficher les différentes colonnes -->
+        <div class="priceContainer">
+        <!-- chaque colonne du flex est une table à 2 lignes et 1 colonne -->
+
+                    <!--TABLE No. 1-->
+                    <div>
+                        <table>
+                            <!-- première case/ligne de la première table -->
+                            <tr id="enTete">
+                                <td>
+                                    <div id="titre">Bronze</div>
+                                    <div id="prix"> $5 / month</div>
+                                </td>
+                            </tr>
+                            <!-- deuxième case/ligne de la première table -->
+                            <tr>
+                                <td>
+                                    <p id="option">1 Account</p>
+                                    <p id="option">1 Project</p>
+                                    <p id="option">50K API Access</p>
+                                    <p id="option">50MB Storage </p>
+                                    <p id="option">Custom Cloud Services</p>
+                                    <p id="option">Weekly Reports </p>
+                                    <div id="SignUp">SIGN UP NOW</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--TABLE No. 2-->
+                    <div>
+                        <table>
+                            <!-- première case/ligne de la deuxième table -->
+                            <tr id="enTete">
+                                <td>
+                                    <div id="titre">Silver</div>
+                                    <div id="prix"> $10 / month</div>
+                                </td>
+                            </tr>
+                            <!-- deuxième case/ligne de la deuxième table -->
+                            <tr>
+                                <td>
+                                    <p id="option">1 Account</p>
+                                    <p id="option">3 Project</p>
+                                    <p id="option">100K API Access</p>
+                                    <p id="option">100MB Storage </p>
+                                    <p id="option">Custom Cloud Services</p>
+                                    <p id="option">Weekly Reports </p>
+                                    <div id="SignUp">SIGN UP NOW</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--TABLE No. 3-->
+                    <div>
+                        <table id="Gold">
+                            <!-- première case/ligne de la troisième table -->
+                            <tr id="enTete">
+                                <td>
+                                    <div id="titre">Gold</div>
+                                    <div id="prix"> $20 / month</div>
+                                </td>
+                            </tr>
+                            <!-- deuxième case/ligne de la troisième table -->
+                            <tr>
+                                <td>
+                                    <p id="option">2 Account</p>
+                                    <p id="option">5 Project</p>
+                                    <p id="option">100K API Access</p>
+                                    <p id="option">200MB Storage </p>
+                                    <p id="option">Custom Cloud Services</p>
+                                    <p id="option">Weekly Reports </p>
+                                    <div id="SignUp">SIGN UP NOW</div>
+                                </td>
+                            </tr>
+                        </table>  
+                    </div>
+                        <!--TABLE No. 4-->                    
+                    <div>
+                        <table>
+                            <!-- première case/ligne de la quatrième table -->
+                            <tr id="enTete">
+                                <td>
+                                    <div id="titre">Diamond</div>
+                                    <div id="prix"> $35 / month</div>
+                                </td>
+                            </tr>
+                            <!-- deuxième case/ligne de la quatrième table -->
+                            <tr>
+                                <td>
+                                    <p id="option">5 Account</p>
+                                    <p id="option">20 Project</p>
+                                    <p id="option">300K API Access</p>
+                                    <p id="option">500MB Storage </p>
+                                    <p id="option">Custom Cloud Services</p>
+                                    <p id="option">Weekly Reports </p>
+                                    <div id="SignUp">SIGN UP NOW</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------- #Contact: Partie "CONTACT" --------------------------------------------->
+
+    <div id="Contact">
+        CONTACT US
+        <div class="texte">Sed aliquam vitae lacus quis interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia aenean.</div><br>
+        <!-- #formContainer: Container pour l'ensemble du formulaire -->
+        <div id="formContainer">
+            <!-- formulaire d'entrée de texte situé sur la moitié gauche -->
+            <form>
+                <input id="formLeft" type="text" name="message" value="Message">
+            </form>
+            <!-- formulaire d'entrée de nom, email et direction avec un bouton d'envoi situé sur la moitié droite -->
+            <div id="formRight">
+                <form >
+                    <input id="entree" type="text" name="fullname" value="Name"><br>
+                    <input id="entree" type="text" name="email" value="Email"><br>
+                    <select> <option>Direction</option> </select>
+                    <input id="send" type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- #FLECHE contient le rond avec la flèche pour remonter à la partie "HOME" -->
+    <a href="#Home">
+		<div id="FLECHE">
+			<!-- #GoToTop est le rond orange -->
+			<div id="GoToTop" href="#Home"></div>
+			<div>
+				<!-- #fleche est la flèche blanche dessinée sur le rond -->
+				<svg id="fleche" width="40" height="40">
+					<line x1="11" x2="22" y1="21" y2="10" stroke="white" stroke-width="5"/>
+					<line x1="19" x2="30" y1="10" y2="21" stroke="white" stroke-width="5"/>
+				</svg>
+			</div>
+				
+		</div>
+	</a>
+    <div id="Footer">
+        <p>
+            Copyright 
+            &#x24D2;
+            2014 Company, Inc. All rights reserved.
+            <br>
+            Theme: Liberty 1.0.0. Designed by YoArts
+        </p>
+        <p>
+            <img src="http://toiles-temps.fr/wp-content/uploads/2017/11/facebook-rond-pour-site.png" width="35px" height="35px" />
+            <img src="data:image/png;base64,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" width="35px" height="35px" />
+            <img src="https://pourron.com/wp-content/uploads/2015/09/nouveau-logo-google-plus-rond.jpg" width="35px" height="35px" />
+        </p>
+    </div>
+    
+</body>
+    <!----- clipPath appliqué sur #Rond pour créer le symbole "+" en transparence sur les images de #OurWorks ----->
+    <defs>
+        <svg width="0" height="0">
+            <clipPath id="croix">
+              <rect x="0" y="0" width="13px" height="13px"/>
+              <rect x="0" y="13px" width="7px" height="4px"/>
+              <rect x="0" y="17px" width="13px" height="13px"/>
+              <rect x="13px" y="23px" width="4px" height="7px"/>
+              <rect x="17px" y="17px" width="13px" height="13px"/>
+              <rect x="23px" y="13px" width="7px" height="4px"/>
+              <rect x="17px" y="0" width="13px" height="13px"/>
+              <rect x="13px" y="0" width="4px" height="7px"/>
+            </clipPath>            
+        </svg>
+       
+    </defs>
+</html>

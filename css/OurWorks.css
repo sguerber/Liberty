@@ -1,0 +1,450 @@
+#OurWorks{
+	padding-top: 25px;
+	padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    font-family:"Poiret One", sans-serif;
+    font-size: 45px;
+}
+
+/* Mosaique des images avec un flex "vertical" contenant deux flex "horizontaux" */
+#images {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    margin-left: 12%;
+    margin-top: 40px;
+}
+  
+#images div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
+#ligne1, #ligne2 {
+    position: relative;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+}
+  
+#ligne1 div, #ligne2 div{
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 270px;
+    height: 203px;
+    opacity: 1;
+	display: block;
+}
+
+
+/* Maintenant on définit les images de la mosaique ainsi que leurs filtres au passage de la souris */
+
+
+/* img0 */
+#img0 #filtre0{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;                         /* le filtre est invisible */
+}
+
+#img0:hover #filtre0{
+    opacity: 0.6;                       /* le filtre devient visible en transparence par dessus l'image au passage de la souris */
+}
+
+#img0 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;                          /* le texte est invisible */
+}
+
+#img0:hover label{
+    opacity: 1;                          /* le texte devient visible au passage de la souris sur l'image */
+}
+
+#img0 #Rond{
+    position: absolute;
+    background-color:white;              /* le rond est blanc */
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");			  /* ceci permet de rogner un symbole "+" au centre de #Rond */
+    opacity: 0;							  /* le symbole est invisible */
+}
+
+#img0:hover #Rond{
+    opacity: 1;							 /* le symbole devient visible lorsque l'on passe la souris sur l'image */
+}
+
+
+/*********** On procède de la même manière pour toutes les images ***********/
+
+/* img1 */
+#img1 #filtre1{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img1:hover #filtre1{
+    opacity: 0.6;
+}
+
+#img1 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img1:hover label{
+    opacity: 1;
+}
+
+#img1:hover #Rond{
+    opacity: 1;
+}
+
+#img1 #Rond{
+    position: absolute;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img2 */
+#img2 #filtre2{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img2:hover #filtre2{
+    opacity: 0.6;
+}
+
+#img2 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img2:hover label{
+    opacity: 1;
+}
+
+#img2:hover #Rond{
+    opacity: 1;
+}
+
+#img2 #Rond{
+    position: absolute;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+/* img3 */
+#img3 #filtre3{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img3:hover #filtre3{
+    opacity: 0.6;
+}
+
+#img3 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img3:hover label{
+    opacity: 1;
+}
+
+#img3:hover #Rond{
+    opacity: 1;
+}
+
+#img3 #Rond{
+    position: absolute;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img4 */
+#img4 #filtre4{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img4:hover #filtre4{
+    opacity: 0.6;
+}
+
+#img4 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img4:hover label{
+    opacity: 1;
+}
+
+#img4:hover #Rond{
+    opacity: 1;
+}
+
+#img4 #Rond{
+    position: absolute;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img5 */
+#img5 #filtre5{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img5:hover #filtre5{
+    opacity: 0.6;
+}
+
+#img5 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img5:hover label{
+    opacity: 1;
+}
+
+#img5:hover #Rond{
+    opacity: 1;
+}
+
+#img5 #Rond{
+    position: absolute;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+/* img6 */
+#img6 #filtre6{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img6:hover #filtre6{
+    opacity: 0.6;
+}
+
+#img6 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img6:hover label{
+    opacity: 1;
+}
+
+#img6:hover #Rond{
+    opacity: 1;
+}
+
+#img6 #Rond{
+    position: absolute;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}
+
+
+/* img7 */
+#img7 #filtre7{
+    position: absolute;
+    width: 270px;
+    height: 203px;
+    left: -10px;
+    top: -5px;
+    background-color:#EE6647;
+    background-position: absolute;
+    opacity: 0;
+}
+
+#img7:hover #filtre7{
+    opacity: 0.6;
+}
+
+#img7 label{
+    position: absolute;
+    left: 35%;
+    font-size: 17px;
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+    bottom: 20px;
+    opacity: 0;
+}
+
+#img7:hover label{
+    opacity: 1;
+}
+
+#img7:hover #Rond{
+    opacity: 1;
+}
+
+#img7 #Rond{
+    position: absolute;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 110px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    clip-path: url("#croix");
+    opacity: 0;
+}

@@ -1,0 +1,114 @@
+#Pricing{
+	padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    font-family:"Poiret One", sans-serif;
+    font-size: 45px;
+}
+
+/* Container flex "horizontal" pour les 4 tables */
+.priceContainer{
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 40px;
+    font-family: "Yantramanav", sans-serif;
+}
+
+/* Définition de l'emplacement de chaque div du flex (table à 2 lignes et 1 colonne) */
+.priceContainer div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 22%;				/* la largeur d'une table du flex est de 22% */
+    text-align: center;
+    font-size: 30px;
+}
+  
+table, tr, td{
+    width: 100%;
+    border: 1px solid #C5C3C3;
+    border-collapse: collapse;  /* les bordures du tableau se confondent */
+    text-align: center;         /* centrage du texte */
+}
+
+
+
+
+/* Définition du filtre sur chaque table au passage de souris*/
+table:hover #enTete{
+    background-color: #898e92;
+}
+
+table:hover tr, table:hover td, table:hover{
+    filter: drop-shadow(2px 3px 6px #524c4c);
+}
+
+/* Définition de la première case/ligne de chaque table contenant #titre et #prix */
+#enTete{
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+td #titre{
+    width: 100%;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+td #prix{
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* Définition de la deuxième case/ligne de chaque table */
+td #option{
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 70%;
+    border-bottom: 1px solid #D7E4F3;
+}
+
+#SignUp{
+    width:200px;
+    height:35px;
+    background:#152338;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+    font-size: 15px;
+    padding-top: 15px;
+    color: white;
+}
+
+
+/* Spécificités pour la troisième table (#Gold) */
+#Gold td{
+    border: 1px solid #409DED;
+}
+
+#Gold #enTete, #Gold #SignUp{
+    background-color: #409DED;
+}
+
+#Gold:hover #enTete, #Gold:hover #SignUp{
+    background-color: #e7cf62af;
+}
+
+#Gold:hover tr, #Gold:hover td{
+    border: 1px solid #e7cf62af;
+}

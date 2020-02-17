@@ -1,0 +1,46 @@
+#BandeRouge{
+    position: sticky;
+    top:0px;
+    width: 100%;
+    height: 70px;
+    background-color: #EE6647;
+	color: white;
+    z-index: 1;
+}
+
+#liberty{
+    position: absolute;
+    width: 40%;
+    top: 12px;
+    left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Biryani", sans-serif;
+}
+
+#menu{
+	flex-wrap: no-wrap;
+	float: right;
+    display: flex;
+    margin-top: 25px;
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex:space-around;
+	width:25%;
+}
+
+#menu div{
+	padding-left:15px;
+	font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+#BandeRouge div a{
+    text-decoration: none;
+    color: white;
+}
+
+#BandeRouge div a:hover{
+    text-decoration: underline;
+}

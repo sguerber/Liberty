@@ -1,0 +1,37 @@
+#FLECHE{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 735px;
+	top: -20px;
+}
+
+/* Rond orange */
+#GoToTop{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #EE6647;
+
+}
+
+/* positionnement de la flèche blanche créée en svg définie dans le html */
+#fleche{
+    position: relative;
+    width:40px;
+    height: 40px;
+    top: -37px;
+    left: 0px;
+} 
+
+/* Bas de page avec les informations et les logos */
+#Footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+

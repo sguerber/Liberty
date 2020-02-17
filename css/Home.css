@@ -1,0 +1,41 @@
+#Home{
+    width: 100%;
+    height: 750px;
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    color: white;
+	margin-top: -150px;
+	padding-bottom: 50px;
+}
+
+#logo{
+    position: relative;
+    top: 200px;
+    left: 42%;
+}
+
+#slogan{
+    position: relative;
+    text-align: center;
+    top: 210px;
+    font-family:"Poiret One", sans-serif;
+    font-size: 45px;
+}
+
+/* Bouton pour accéder à la partie "CONTACT" de la page */
+#ContactUs{
+    width:400px;
+	height:35px;
+    background: #EE6647;
+    margin-left: 550px;
+    margin-top: 250px;
+    border-radius: 50px;
+    border: 0px;
+    color: white;
+}
+
+#ContactUs a{
+    text-decoration: none;
+    color: white;
+    font-family:"Poiret One", sans-serif;
+}
